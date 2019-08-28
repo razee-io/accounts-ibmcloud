@@ -1,21 +1,21 @@
 {
-  "name": "accounts-bluemix",
-  "version": "1.0.4",
-  "description": "Login service for Bluemix accounts",
+  "name": "accounts-ibmcloud",
+  "version": "0.1.0",
+  "description": "Login service for IBM Cloud accounts",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oneibmcloud/accounts-bluemix.git"
+    "url": "git+https://github.com/razee-io/accounts-ibmcloud.git"
   },
-  "author": "ibmcloud",
+  "author": "razeeio",
   "bugs": {
-    "url": "https://github.com/oneibmcloud/accounts-bluemix/issues"
+    "url": "https://github.com/razee-io/accounts-ibmcloud/issues"
   },
-  "homepage": "https://github.com/oneibmcloud/accounts-bluemix#readme",
+  "homepage": "https://github.com/razee-io/accounts-ibmcloud#readme",
   "dependencies": {
-    "bluemix" : "git+https://git@github.com/oneibmcloud/bluemix.git"
+    "ibmcloud" : "git+https://git@github.com/razee-io/ibmcloud.git"
   }
 }

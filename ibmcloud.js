@@ -1,7 +1,7 @@
-Accounts.oauth.registerService('bluemix');
+Accounts.oauth.registerService('ibmcloud');
 
 if (Meteor.isClient) {
-  Meteor.loginWithBluemix = function(options, callback) {
+  Meteor.loginWithIbmcloud = function(options, callback) {
     // support a callback without options
     if (! callback && typeof options === "function") {
       callback = options;
@@ -9,11 +9,11 @@ if (Meteor.isClient) {
     }
 
     var credentialRequestCompleteCallback = Accounts.oauth.credentialRequestCompleteHandler(callback);
-    Bluemix.requestCredential(options, credentialRequestCompleteCallback);
+    Ibmcloud.requestCredential(options, credentialRequestCompleteCallback);
   }
 } else {
   Accounts.addAutopublishFields({
-    forLoggedInUser: ['services.bluemix'],
-    forOtherUsers: ['services.bluemix.username']
+    forLoggedInUser: ['services.ibmcloud'],
+    forOtherUsers: ['services.ibmcloud.username']
   });
 }
